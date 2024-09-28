@@ -63,14 +63,14 @@ class EMI : AppCompatActivity(), View.OnClickListener {
 
     private fun emiCal(P: Float, I: Float, Y: Float): Float {
         val N = Y * 12  // Convert years to months
+        val R = I / (12 * 100) // Convert annual interest rate into a monthly decimal rate
         return if (I == 0f) {
             // If interest rate is 0, EMI is simply principal divided by months
             P / N
         } else {
             // Proper EMI calculation
-            val emiResult = (P * I * (1 + I).toDouble().pow(N.toDouble())).toFloat() /
-                    ((1 + I).toDouble().pow(N.toDouble()) - 1).toFloat()
-            emiResult
+            val emiResult = (P * R * (1 + R).pow(N)) / ((1 + R).pow(N) - 1)
+            emiResult.toFloat() // Return the result as a float
         }
     }
 }
