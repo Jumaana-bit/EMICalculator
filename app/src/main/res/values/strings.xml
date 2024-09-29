@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">EMICalculator</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="principalAmount">Mortgage Principal Amount:</string>
+    <string name="amountHint">$ Enter amount</string>
+    <string name="interest">Annual Interest Rate</string>
+    <string name="rateHint">% Enter rate</string>
+    <string name="years">Amortization Period</string>
+    <string name="yearsHint">Enter number of years</string>
+    <string name="calculateButton">Calculate my Payments</string>
+    <string name="result">Result will be shown here</string>
+    <string name="refresh">New Calculation</string>
 </resources>
