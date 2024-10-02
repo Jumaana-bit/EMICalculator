@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">EMICalculator</string>
     <string name="emi_calculator">EMI Calculator</string>
-    <string name="principalAmount">Mortgage Principal Amount:</string>
+    <string name="principalAmount">Mortgage Principal Amount</string>
     <string name="amountHint">$ Enter amount</string>
     <string name="interest">Annual Interest Rate</string>
     <string name="rateHint">% Enter rate</string>

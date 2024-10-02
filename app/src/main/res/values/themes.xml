@@ -2,7 +2,7 @@
 <resources>
 
         <!-- Base application theme extending AppCompat -->
-        <style name="Theme.EMICalculator" parent="Theme.AppCompat.Light.DarkActionBar">
+        <style name="Theme.EMICalculator" parent="Theme.AppCompat.NoActionBar">
             <!-- Customize your theme here -->
             <item name="colorPrimary">@color/purple_500</item>
             <item name="colorPrimaryDark">@color/purple_700</item>

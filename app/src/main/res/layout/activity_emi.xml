@@ -9,7 +9,7 @@
     tools:context=".EMI">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/labelPrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
@@ -18,9 +18,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/principal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/principal"
@@ -30,6 +31,8 @@
         android:autofillHints="creditCardNumber"
         android:background="@drawable/edit_text_background"
         android:hint="@string/amountHint"
+        android:textColor="@color/black"
+        android:textColorHint="#564D56"
         android:inputType="number"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,18 +43,17 @@
     <!--had to choose the closest autofill hint to stop the warning -->
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/labelRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="151dp"
         android:layout_marginBottom="4dp"
-        android:labelFor="@id/rate"
         android:text="@string/interest"
         android:textColor="#555"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/rate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -60,11 +62,13 @@
         android:layout_width="345dp"
         android:layout_height="56dp"
         android:layout_marginHorizontal="16dp"
-        android:background="@drawable/edit_text_background"
-        android:hint="@string/interest"
-        android:inputType="numberDecimal"
         android:autofillHints="postalCode"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/rateHint"
+        android:inputType="numberDecimal"
         android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#564D56"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,24 +76,21 @@
         app:layout_constraintVertical_bias="0.344" />
     <!--had to choose the closest autofill hint to stop the warning -->
 
-    <!--had to choose the closest autofill hint to stop the warning -->
-
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/labelYears"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="259dp"
         android:layout_marginBottom="2dp"
-        android:labelFor="@id/editYears"
         android:text="@string/years"
         android:textColor="#555"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editYears"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <EditText
         android:id="@+id/editYears"
@@ -101,6 +102,8 @@
         android:hint="@string/yearsHint"
         android:inputType="number"
         android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#564D56"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
